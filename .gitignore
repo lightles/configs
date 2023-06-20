@@ -1,0 +1,8 @@
+/*
+/*/
+!.gitignore
+!/tmux/
+!/zsh/
+/zsh/config/plugins/
+/zsh/oh-my-zsh/
+
