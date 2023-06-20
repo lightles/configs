@@ -3,6 +3,7 @@
 !.gitignore
 !/tmux/
 !/zsh/
+!/tilewm/
 /zsh/config/plugins/
 /zsh/oh-my-zsh/
 
