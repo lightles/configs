@@ -1,9 +1,10 @@
 /*
 /*/
+/zsh/plugins/*
+!README.md
 !.gitignore
 !/tmux/
 !/zsh/
 !/tilewm/
-/zsh/config/plugins/
-/zsh/oh-my-zsh/
+
 
