@@ -14,7 +14,6 @@ alias "vim=nvim"
 alias "vi=nvim"
 alias "nvimw=nvim -c 'Telescope workspaces'"
 alias "vimw=nvim -c 'Telescope workspaces'"
-alias "start-tmux=tmux -f ~/.config/tmux/config"
 alias "flushdns=sudo killall -HUP mDNSResponder"
 alias "pwd=print -P '%F{green}$PWD\n'"
 
