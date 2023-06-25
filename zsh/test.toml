@@ -1,0 +1,368 @@
+format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$fossil_branch\
+$hg_branch\
+$pijul_channel\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$shell\
+${custom.vi_prompt}\
+$character
+"""
+
+[custom.vi_prompt]
+command = "echo $ZVM_CUSTOM_MODE_PROMPT_CHAR"
+when = "true"
+format = "[$symbol($output)](yellow) "
+
+[character]
+success_symbol = '[](bold green)'
+error_symbol = '[](bold red)'
+vimcmd_symbol = '[](bold yellow)'
+
+[aws]
+format = '󰞔 [$symbol($profile)(\($region\))(󰞔 $duration\])]($style)\]'
+symbol = "  "
+
+[bun]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[c]
+format = '󰞔 [$symbol($version(-$name))]($style)\]'
+symbol = " "
+
+[cmake]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[cmd_duration]
+format = '󰞔 [⏱ $duration]($style)\]'
+
+[cobol]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[conda]
+format = '󰞔 [$symbol$environment]($style)\]'
+symbol = " "
+
+[crystal]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[daml]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[dart]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = " "
+
+[deno]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[docker_context]
+format = '󰞔 [$symbol$context]($style)\]'
+symbol = " "
+
+[dotnet]
+format = '󰞔 [$symbol($version)(🎯 $tfm)]($style)\]'
+
+[elixir]
+format = '󰞔 [$symbol($version \(OTP $otp_version\))]($style)\]'
+symbol = " "
+
+[elm]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = " "
+
+[erlang]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[fennel]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[fossil_branch]
+format = '󰞔 [$symbol$branch]($style)\]'
+symbol = " "
+
+[gcloud]
+format = '󰞔 [$symbol$account(@$domain)(\($region\))]($style)\]'
+
+[git_branch]
+format = ' on 󰞔 [$symbol$branch]($style)\]'
+symbol = " "
+
+[git_status]
+format = '([󰞔 $all_status$ahead_behind\]]($style))'
+
+[golang]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = " "
+
+[gradle]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[guix_shell]
+format = '󰞔 [$symbol]($style)\]'
+symbol = " "
+
+[haskell]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = " "
+
+[haxe]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = "⌘ "
+
+[helm]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[hg_branch]
+format = '󰞔 [$symbol$branch]($style)\]'
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = " "
+
+[julia]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = " "
+
+[kotlin]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[kubernetes]
+format = '󰞔 [$symbol$context( \($namespace\))]($style)\]'
+
+[directory]
+read_only = " 󰌾"
+
+[lua]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = " "
+
+[memory_usage]
+format = '󰞔 $symbol[$ram( | $swap)]($style)\]'
+symbol = "󰍛 "
+
+[meson]
+format = '󰞔 [$symbol$project]($style)\]'
+symbol = "󰔷 "
+
+[nim]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = "󰆥 "
+
+[nix_shell]
+format = '󰞔 [$symbol$state( \($name\))]($style)\]'
+symbol = " "
+
+[nodejs]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = " "
+
+[ocaml]
+format = '󰞔 [$symbol($version)(\($switch_indicator$switch_name\))]($style)\]'
+
+[opa]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[openstack]
+format = '󰞔 [$symbol$cloud(\($project\))]($style)\]'
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
+
+[os]
+format = '󰞔 [$symbol]($style)\]'
+
+[package]
+format = '󰞔 [$symbol$version]($style)\]'
+symbol = "󰏗 "
+
+[perl]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[php]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[pijul_channel]
+format = '󰞔 [$symbol$channel]($style)\]'
+symbol = "🪺 "
+
+[pulumi]
+format = '󰞔 [$symbol$stack]($style)\]'
+
+[purescript]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[python]
+format = '󰞔 [${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
+
+[raku]
+format = '󰞔 [$symbol($version-$vm_version)]($style)\]'
+
+[red]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[ruby]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = " "
+
+[rust]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = " "
+
+[scala]
+format = '󰞔 [$symbol($version)]($style)\]'
+symbol = " "
+
+[spack]
+format = '󰞔 [$symbol$environment]($style)\]'
+symbol = "🅢 "
+
+[sudo]
+format = '󰞔 [as $symbol]($style)\]'
+
+[swift]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[terraform]
+format = '󰞔 [$symbol$workspace]($style)\]'
+
+[time]
+format = '󰞔 [$time]($style)\]'
+
+[username]
+format = '󰞔 [$user]($style)\]'
+
+[vagrant]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[vlang]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[zig]
+format = '󰞔 [$symbol($version)]($style)\]'
+
+[solidity]
+format = '󰞔 [$symbol($version)]($style)\]'
