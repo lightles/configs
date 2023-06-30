@@ -1,0 +1,26 @@
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias ..="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
+
+alias "ls=gls"
+alias "l=ls -AhX --group-directories-first --color=auto"
+alias "ll=ls -gGAhX --group-directories-first --color=auto --time-style='+'"
+alias "l.=ls -gGAhXd --group-directories-first --color=auto --time-style='+' .*"
+alias "L=ls -lAhXZ -1 --group-directories-first --color=auto"
+alias "cl=clear;l"
+alias "cs=clear; date +%R; pwd"
+alias "kys=exit"
+alias "srczsh=source ~/.zshrc"
+alias "vim=nvim"
+alias "vi=nvim"
+alias "nvimw=nvim -c 'Telescope workspaces'"
+alias "vimw=nvim -c 'Telescope workspaces'"
+alias "flushdns=sudo killall -HUP mDNSResponder"
+alias "pwd=print -P '%F{green}$PWD\n'"
+alias "venv-ansible=source ~/.venv/ansible/bin/activate"
+alias "venv-python-fl=source ~/.venv/python-fl/bin/activate"

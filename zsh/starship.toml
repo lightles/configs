@@ -314,6 +314,7 @@ format = '\[[$symbol($version)]($style)\]'
 [python]
 format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
 symbol = " "
+detect_files = ['.python-version', 'Pipfile', '__init__.py', 'pyproject.toml', 'setup.py', 'tox.ini']
 
 [rlang]
 symbol = "󰟔 "
